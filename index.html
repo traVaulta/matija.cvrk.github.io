@@ -315,6 +315,80 @@
             filter: brightness(70%);
             margin-left: -1.75rem;
         }
+
+        @media screen and (max-width: 980px) {
+            .hero {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: lavender;
+            }
+            .hero .card {
+                margin-top: 30%;
+                margin-bottom: 5%;
+                text-align: center;
+                position: unset;
+                left: unset;
+                top: unset;
+            }
+            .hero .card h1,
+            .hero .card h4 {
+                color: unset;
+            }
+
+            .ideas .board {
+                flex-wrap: wrap;
+                gap: 3rem;
+            }
+            .ideas .board .challenges {
+                width: 100%;
+                gap: 2rem;
+                background-color: whitesmoke;
+            }
+            .ideas .board .challenges .challenge {
+                padding: 2rem;
+                border-radius: 9px;
+            }
+            .ideas .board .solutions {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+            .ideas .board .solutions .panel {
+                background-color: lavenderblush;
+            }
+            .ideas .board .solutions {
+                flex-direction: unset;
+                gap: 1rem;
+                padding: 0 1rem;
+                display: none;
+            }
+            .ideas .board .solutions .panel {
+                align-items: center;
+            }
+            .ideas .board .solutions .panel .panel-text {
+                display: none;
+            }
+
+            .track-record {
+                flex-wrap: wrap;
+            }
+            .track-record .heading,
+            .track-record .projects {
+                width: 100%;
+            }
+            .track-record .projects {
+                justify-content: unset;
+                gap: 2rem;
+            }
+            .track-record .project-heading,
+            .track-record .project-content {
+                padding: unset;
+            }
+            .bullet {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -394,7 +468,6 @@
             <section class="project">
                 <div class="project-heading">
                     <div class="project-title"><span class="bullet">&#9818;</span> Park forest Marjan</div>
-                    <!--<div class="project-title"><span class="bullet">&#9873;</span> Park forest Marjan</div>-->
                     <div class="project-subtitle">Interactive audio visual guide</div>
                 </div>
                 <div class="project-content">
@@ -408,7 +481,6 @@
             <section class="project">
                 <div class="project-heading">
                     <div class="project-title"><span class="bullet">&#9818;</span> Končar MES product configurator</div>
-                    <!--<div class="project-title"><span class="bullet">&#9873;</span> Končar MES product configurator</div>-->
                 </div>
                 <div class="project-content">
                     <p>Product configurator for Končar end users when ordering electric motors or fans through their MES website realised as 2 projects 1 year apart, with then employer LittleCode still providing support and app maintenance</p>
